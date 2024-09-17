@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SAVB</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	
+	<!-- start: google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<!-- end: google fonts -->
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- start: slick slider -->
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="plugins/slick/slick.min.js"></script>
+	<!-- end: slick slider -->
+	
+	<!-- start: calendar -->
+	<link rel="stylesheet" href="plugins/calendar/zabuto_calendar.min.css" />
+	<script src="plugins/calendar/zabuto_calendar.min.js"></script>
+	<!-- start: calendar -->
+	
+	<script src="js/custom.js"></script>
+</head>
+<body>
+
+<!-- start: header -->
+<header class="border border_b">
+	<div class="d_flex flex_dir_col_mb">
+		<div class="left border border_r d_flex align_center justify_center_mb">
+			<a href="#"><img src="images/header/logo.png" class="logo" /></a>
+		</div>
+		<div class="right">
+			<div class="top border border_b d_flex justify_space_between flex_dir_col_mb gap_10_mb">
+				<div class="top_left d_flex align_center justify_center_mb">
+					<img src="images/defaults/icon_clock.png" class="icon_sm" />
+					<div class="d_flex gap_10">
+						<span class="f_500">Darbo laikas:</span>
+						<span>I-V 10:00-19:00</span>
+					</div>
+				</div>
+				<div class="top_right">
+					<ul class="icons_varient d_flex align_center gap_30 gap_20_mb justify_center_mb">
+						<li><a href="#"><img src="images/defaults/icon_magnifyingGlass.png" /></a></li>
+						<li><a href="#"><img src="images/defaults/icon_treeStructure.png" /></a></li>
+						<li><a href="#"><img src="images/defaults/icon_globe.png" /></a></li>
+						<li><a href="#"><img src="images/defaults/icon_hands.png" /></a></li>
+						<li><a href="#"><img src="images/defaults/icon_download.png" /></a></li>
+						<li><a href="#"><strong class="text_underline">LT</strong> / EN</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom d_flex justify_space_between align_stretch justify_center_mb">
+				<div class="bottom_left d_flex_mb align_center_mb">
+					<a href="#" class="menu_pointer_mb hidden_mb"><img src="images/defaults/icon_hamburger.png" /></a>
+					<ul class="menu d_flex gap_25 flex_dir_col_mb gap_20_mb">
+						<li><a href="#">Užsakyk</a></li>
+						<li><a href="#">Apie mus</a></li>
+						<li><a href="#">Paslaugos</a></li>
+						<li><a href="#">Veikla</a></li>
+						<li><a href="#">D.U.K.</a></li>
+					</ul>
+				</div>
+				<div class="bottom_right icons_varient d_flex border border_l flex_dir_col_mb">
+					<a href="#" class="btn btn_lg d_flex align_center gap_10"><img src="images/defaults/icon_arrowRight.png" /><span>Apsilankyk</span></a>
+					<a href="#" class="btn btn_lg d_flex align_center gap_10 bg_green text_white"><img src="images/defaults/icon_bookOpenText.png" /><span>Regiono bibliotekoms</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- end: header -->
+
+<!-- start: banner -->
+<div class="banner_section">
+	<div class="inner">
+		<div class="slider">
+			<div class="row bg_image d_flex align_center justify_center" style="background-image:url(images/banner/banner_image_1.jpg);">
+				<div class="content text_center text_white">
+					<h2 class="f_700">Didžiausia viešoji biblioteka šiaurės Lietuvoje</h2>
+					<p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
+					<a href="#" class="btn btn_default f_500 bg_green text_none">Plačiau</a>
+				</div>
+			</div>
+			<div class="row bg_image d_flex align_center justify_center" style="background-image:url(images/banner/banner_image_1.jpg);">
+				<div class="content text_center text_white">
+					<h2 class="f_700">Didžiausia viešoji biblioteka šiaurės Lietuvoje</h2>
+					<p>Tai miesto ir regiono bendruomenes suburiantis centras</p>
+					<a href="#" class="btn btn_default f_500 bg_green text_none">Plačiau</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end: banner -->
+
+<!-- start: canlender & blog -->
+<div class="cb_section">
+	<div class="inner d_flex flex_dir_col_mb">
+		<div class="colmn left bg_grey_light">
+			<div class="content canlender_section">
+				<div id="canlender"></div>
+			</div>
+		</div>
+		<div class="colmn right">
+			<div class="content">
+				<h3 class="f_700 text_uppercase">Aktualu</h3>
+				<div class="blog_section">
+					<div class="blog_header">
+						<ul class="d_flex gap_25">
+							<li class="active"><a href="#" class="visi">Visi įrašai</a></li>
+							<li><a href="#" class="renginiai">Renginiai</a></li>
+							<li><a href="#" class="parodos">Parodos</a></li>
+							<li><a href="#" class="naujienos">Naujienos</a></li>
+							<li><a href="#" class="informacija">Informacija</a></li>
+						</ul>
+					</div>
+					<div class="blog_content">
+						<div class="row d_flex gap_15 visi naujienos">
+							<div class="image">
+								<img src="images/blog/blog_image_1.png" />
+							</div>
+							<div class="text">
+								<div class="meta">2024-02-16</div>
+								<div class="title f_500">Padovanok bibliotekai reikalingą knygą</div>
+							</div>
+						</div>
+						<div class="row d_flex gap_15 visi renginiai informacija">
+							<div class="image">
+								<img src="images/blog/blog_image_2.png" />
+							</div>
+							<div class="text">
+								<div class="meta">2024-02-16</div>
+								<div class="title f_500">Geras sekmadienis su biblioteka!</div>
+							</div>
+						</div>
+						<div class="row d_flex gap_15 visi parodos">
+							<div class="image">
+								<img src="images/blog/blog_image_3.png" />
+							</div>
+							<div class="text">
+								<div class="meta">2024-02-16</div>
+								<div class="title f_500">Padovanok bibliotekai reikalingą knygą</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+<!-- end: canlender & blog -->
+
+<!-- start: image carousel -->
+<div class="ic_section">
+	<div class="inner">
+		<div class="container">
+			<div class="ic_header d_flex align_center justify_space_between gap_15 flex_dir_col_mb">
+				<div class="colmn">
+					<h3 class="f_700 text_uppercase">Naujausios knygos</h3>
+				</div>
+				<div class="colmn">
+					<a href="#" class="d_flex align_center arrow_link f_500">Peržiūrėti visas knygas <img src="images/defaults/icon_arrowUpRight.png" class="icon_arrow" /></a>
+				</div>
+			</div>
+			<div class="ic_content">
+				<div class="image_carousel carousel_default">
+					<div class="row">
+						<img src="images/image-carousel/ic_image_1.png" class="icon_arrow" />
+						<p class="f_500 text_grey">Tim Sullivan</p>
+						<h6 class="f_500">Dantistas</h6>
+					</div>
+					<div class="row">
+						<img src="images/image-carousel/ic_image_2.png" class="icon_arrow" />
+						<p class="f_500 text_grey">Julia Quinn</p>
+						<h6 class="f_500">Bridžertonai. Jo bučinys. Hiacintos istorija</h6>
+					</div>
+					<div class="row">
+						<img src="images/image-carousel/ic_image_3.png" class="icon_arrow" />
+						<p class="f_500 text_grey">Anne Jacobs</p>
+						<h6 class="f_500">Villos dukterys</h6>
+					</div>
+					<div class="row">
+						<img src="images/image-carousel/ic_image_4.png" class="icon_arrow" />
+						<p class="f_500 text_grey">Helen Fields</p>
+						<h6 class="f_500">Tobula tyla</h6>
+					</div>
+					<div class="row">
+						<img src="images/image-carousel/ic_image_1.png" class="icon_arrow" />
+						<p class="f_500 text_grey">Tim Sullivan</p>
+						<h6 class="f_500">Dantistas</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+<!-- end: image carousel -->
+
+<!-- start: banner with text -->
+<div class="bt_section">
+	<div class="inner d_flex align_stretch flex_dir_col_mb">
+		<div class="colmn left">
+			<img src="images/banner-text/bt_image_1.png" />
+		</div>
+		<div class="colmn right d_flex align_center d_block_mb">
+			<div class="content">
+				<h3 class="f_700 text_uppercase">Vaikams ir<br/>paaugliams</h3>
+				<div class="text_section">
+					<div class="row d_flex align_center align_stretch">
+						<div class="text_left bg_green d_flex align_center justify_center">
+							<img src="images/banner-text/icon_calendarBlank.png" class="icon" />
+						</div>
+						<div class="text_right bg_green_light">
+							<a href="#" class="d_flex align_center justify_space_between gap_15 text_none">
+								<h4 class="f_500">Renginiai</h4>
+								<img src="images/defaults/icon_arrowUpRight_lg.png" class="icon" />
+							</a>
+						</div>							
+					</div>	
+					<div class="row d_flex align_center align_stretch">
+						<div class="text_left bg_green d_flex align_center justify_center">
+							<img src="images/banner-text/icon_chalkboardTeacher.png" class="icon" />
+						</div>
+						<div class="text_right bg_green_light">
+							<a href="#" class="d_flex align_center justify_space_between gap_15 text_none">
+								<h4 class="f_500">Edukacijos</h4>
+								<img src="images/defaults/icon_arrowUpRight_lg.png" class="icon" />
+							</a>
+						</div>							
+					</div>
+					<div class="row d_flex align_center align_stretch">
+						<div class="text_left bg_green d_flex align_center justify_center">
+							<img src="images/banner-text/icon_puzzlePiece.png" class="icon" />
+						</div>
+						<div class="text_right bg_green_light">
+							<a href="#" class="d_flex align_center justify_space_between gap_15 text_none">
+								<h4 class="f_500">Žaidimai ir kitos <br/>veiklos</h4>
+								<img src="images/defaults/icon_arrowUpRight_lg.png" class="icon" />
+							</a>
+						</div>							
+					</div>
+					<div class="row d_flex align_center align_stretch">
+						<div class="text_left bg_green d_flex align_center justify_center">
+							<img src="images/banner-text/icon_books.png" class="icon" />
+						</div>
+						<div class="text_right bg_green_light">
+							<a href="#" class="d_flex align_center justify_space_between gap_15 text_none">
+								<h4 class="f_500">Naujausios knygos</h4>
+								<img src="images/defaults/icon_arrowUpRight_lg.png" class="icon" />
+							</a>
+						</div>							
+					</div>
+				</div>	
+			</div>	
+		</div>
+	</div>
+</div>		
+<!-- end: banner with text -->
+
+<!-- start: logo carousel -->
+<div class="lc_section">
+	<div class="inner">
+		<div class="container">
+			<div class="logo_carousel carousel_default">
+				<div class="row">
+					<img src="images/logo-carousel/logo_vaga.png" />
+				</div>
+				<div class="row">
+					<img src="images/logo-carousel/logo_history.png" />
+				</div>
+				<div class="row">
+					<img src="images/logo-carousel/logo_we_lithuania.png" />
+				</div>
+				<div class="row">
+					<img src="images/logo-carousel/logo_valdzios.png" />
+				</div>
+				<div class="row">
+					<img src="images/logo-carousel/logo_ibibli.png" />
+				</div>
+				<div class="row">
+					<img src="images/logo-carousel/logo_vaga.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+<!-- end: logo carousel -->
+
+<!-- start: testimonial slider -->
+<div class="ts_section bg_green">
+	<div class="inner">
+		<div class="container" style="background-image: url(images/testimonial-slider/ts_bg_image.png);">
+			<div class="testimonial_slider">
+				<div class="row">
+					<div class="slider_content d_flex align_center flex_dir_col_mb">
+						<div class="left colmn">
+							<img src="images/testimonial-slider/ts_image_1.png" />
+						</div>
+						<div class="right colmn">
+							<h3 class="text_white f_700">„Aušros alėja“</h3>
+							<p class="text_white">The most advanced revenue than this. I like Level more and more each da easier. It really saves me time and ef business has been lacking lorem ipsum.</p>
+							<a href="#" class="btn btn_default f_500 bg_white text_none text_green">Skaityti</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="slider_content d_flex align_center flex_dir_col_mb">
+						<div class="left colmn">
+							<img src="images/testimonial-slider/ts_image_1.png" />
+						</div>
+						<div class="right colmn">
+							<h3 class="text_white f_700">„Aušros alėja“</h3>
+							<p class="text_white">The most advanced revenue than this. I like Level more and more each da easier. It really saves me time and ef business has been lacking lorem ipsum.</p>
+							<a href="#" class="btn btn_default f_500 bg_white text_none text_green">Skaityti</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="slider_content d_flex align_center flex_dir_col_mb">
+						<div class="left colmn">
+							<img src="images/testimonial-slider/ts_image_1.png" />
+						</div>
+						<div class="right colmn">
+							<h3 class="text_white f_700">„Aušros alėja“</h3>
+							<p class="text_white">The most advanced revenue than this. I like Level more and more each da easier. It really saves me time and ef business has been lacking lorem ipsum.</p>
+							<a href="#" class="btn btn_default f_500 bg_white text_none text_green">Skaityti</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+<!-- end: testimonial slider -->
+
+<!-- start: footer -->
+<footer class="bg_grey_light">
+	<div class="inner">
+		<div class="container">
+			<div class="top d_flex flex_dir_col_mb">
+				<div class="colmn">
+					<img src="images/header/logo.png" class="logo" />
+					<p class="text_grey">Biudžetinė įstaiga, kodas 190757940<br/>
+					Duomenys kaupiami ir saugomi<br/>
+					Juridinių asmenų registre</p>
+					<ul class="social_icons d_flex align_center gap_10">
+						<li><a href="#" target="_blank"><img src="images/footer/icon_fb.png" /></a></li>
+						<li><a href="#" target="_blank"><img src="images/footer/icon_ig.png" /></a></li>
+						<li><a href="#" target="_blank"><img src="images/footer/icon_yt.png" /></a></li>
+					</ul>
+				</div>
+				<div class="colmn">
+					<p class="f_500 heading">Kontaktai</p>
+					<ul class="contact_info">
+						<li class="d_flex align_center gap_10">
+							<img src="images/footer/icon_mapPin.png" />
+							<p class="text_grey">Aušros alėja 62, LT-76235,  Šiauliai</p>
+						</li>
+						<li class="d_flex align_center gap_10">
+							<img src="images/footer/icon_envelopeSimple.png" />
+							<p class="text_grey">bibl@savb.lt</p>
+						</li>
+						<li class="d_flex align_center gap_10">
+							<img src="images/footer/icon_phoneCall.png" />
+							<p class="text_grey">(8 41) 52 37 5057840</p>
+						</li>
+						<li class="d_flex align_center gap_10">
+							<p class="text_grey">Įm. kodas: 190757840</p>
+						</li>
+					</ul>
+				</div>
+				<div class="colmn">
+					<p class="f_500 heading">Informacija</p>
+					<ul class="menu_info">
+						<li>
+							<a class="text_grey">Struktūra ir kontaktinė informacija</a>
+						</li>
+						<li>
+							<a class="text_grey">Administracinė informacija</a>
+						</li>
+						<li>
+							<a class="text_grey">Logotipas</a>
+						</li>
+						<li>
+							<a class="text_grey">Teisės aktai</a>
+						</li>
+						<li>
+							<a class="text_grey">Asmens duomenų apsauga</a>
+						</li>
+						<li>
+							<a class="text_grey">Korupcijos prevencija</a>
+						</li>
+						<li>
+							<a class="text_grey">Pranešėjų apsauga</a>
+						</li>
+						<li>
+							<a class="text_grey">Nuorodos</a>
+						</li>
+					</ul>
+				</div>
+				<div class="colmn">
+					<p class="f_500 heading">Prenumeruokite naujienlaiškį<br/>
+					ir sužinokite naujienas pirmieji!</p>
+					<div class="newsletter">
+						<form>
+							<input type="email" placeholder="Jūsų el. paštas" />
+							<input type="submit" value="Prenumeruoti" class="btn btn_default f_500 bg_green text_white" />
+							<p class="text_grey info">*Prenumeruodami naujienlaiškį sutinkate su privatumo politika</p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="bottom d_flex align_center justify_space_between gap_20 flex_dir_col_mb">
+				<div class="colmn">
+					<p class="text_grey">© 2023 Šiaulių apskrities Povilo Višinskio viešoji biblioteka</p>
+				</div>
+				<div class="colmn">
+					<p class="text_grey">Sukurta Texus</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+<!-- end: footer -->
+</body>
+</html> 
